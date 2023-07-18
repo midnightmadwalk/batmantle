@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>batmantle</title>
+    <style>
+        body {
+          text-align: center;
+          word-wrap: break-word;
+        }
+        form {
+        text-align: left;
+        }
+      </style>
+</head>
+<body>
+<pre>
+    _,    _   _    ,_
+    .o888P     Y8o8Y     Y888o.
+   d88888      88888      88888b
+  d888888b_  _d88888b_  _d888888b
+  8888888888batmantle.fun888888888
+  88888888888888888888888888888888
+  YJGS8P"Y888P"Y888P"Y888P"Y8888P
+   Y888   '8'   Y8P   '8'   888Y
+    '8o          V          o8'
+</pre>
+   
+    <h1>Arkham Asylum - gotham</h1>
+    <h1>#1 superhero meta on mantle</h1>
+    <h2>degen mantle checkup</h2>
+    <form>
+        <p>1. Have you ever bought an unverified contract to fulfill degen lust?</p>
+        <input type="radio" name="q1" value="yes" onclick="displayText('q1')"> Yes
+        <input type="radio" name="q1" value="no" onclick="displayText('q1')"> No
+        <div id="q1-text"></div>
+
+        <p>2. Did you get rugged today?</p>
+        <input type="radio" name="q2" value="yes" onclick="displayText('q2')"> Yes
+        <input type="radio" name="q2" value="no" onclick="displayText('q2')"> No
+        <div id="q2-text"></div>
+
+        <p>3. Did you literally know there was a blacklist function and still sniped that token?</p>
+        <input type="radio" name="q3" value="yes" onclick="displayText('q3')"> Yes
+        <input type="radio" name="q3" value="no" onclick="displayText('q3')"> No
+        <div id="q3-text"></div>
+
+        <p>4. Have you ever blindly bought a token based on hype without scanning the contract?</p>
+        <input type="radio" name="q4" value="yes" onclick="displayText('q4')"> Yes
+        <input type="radio" name="q4" value="no" onclick="displayText('q4')"> No
+        <div id="q4-text"></div>
+
+        <p>5. Did you lose money in a honeypot?</p>
+        <input type="radio" name="q5" value="yes" onclick="displayText('q5')"> Yes
+        <input type="radio" name="q5" value="no" onclick="displayText('q5')"> No
+        <div id="q5-text"></div>
+
+        <br><br>
+        <input type="button" value="Submit" onclick="calculateMentalHealthPoints()">
+        <div id="results"></div>
+    </form>
+
+    <script>
+        var mentalHealthPoints = 0;
+
+        function displayText(questionId) {
+            var questionText = "";
+            var answer = document.querySelector('input[name="' + questionId + '"]:checked').value;
+            var textContainer = document.getElementById(questionId + "-text");
+
+            if (answer === "yes") {
+                switch (questionId) {
+                    case "q1":
+                        questionText = "Buying unverified contracts can be risky and impulsive.";
+                        break;
+                    case "q2":
+                        questionText = "Getting rugged can have a negative impact on your finances.";
+                        break;
+                    case "q3":
+                        questionText = "Ignoring the blacklist function indicates poor judgment.";
+                        break;
+                    case "q4":
+                        questionText = "Blindly buying tokens without contract analysis can lead to losses.";
+                        break;
+                    case "q5":
+                        questionText = "Losing money in a honeypot can be frustrating and stressful.";
+                        break;
+                }
+
+                mentalHealthPoints++;
+                textContainer.innerHTML = "<strong>Response:</strong> " + questionText;
+            } else {
+                textContainer.innerHTML = "";
+            }
+        }
+
+        function calculateMentalHealthPoints() {
+            var resultContainer = document.getElementById("results");
+
+            if (mentalHealthPoints > 0) {
+                resultContainer.innerHTML = "<h2>Results:</h2>";
+                resultContainer.innerHTML += "<p>Mental Health Points: " + mentalHealthPoints + "</p>";
+                resultContainer.innerHTML += "<p>The higher the Mental Health Points, the worse your mental health may be.</p>";
+            } else {
+                resultContainer.innerHTML = "<p>Please answer all the questions to see the results.</p>";
+            }
+        }
+    </script>
+</body>
+    <iframe weidth="200" height="200" src= "https://www.youtube.com/embed/tgbNymZ7vqY"frameborder="1" allowfullscreen></iframe>
+</body>
+</html>
