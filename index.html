@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-
   <title>BatMantle</title>
-<link rel="icon" type="image/x-icon" href="favicon.ico">
   <style>
+
 
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 form {
@@ -19,7 +20,29 @@ body {
   background:black;  
   font-family: Montserrat, sans-serif;
 }
+section#s3 {
+  position: relative;
+}
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+.social-icons a {
+  color: white;
+  margin: 10px; /* Increased the margin for spacing */
+  font-size: 70px; /* Increased the font size to make icons bigger */
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #00aaff;
+}
 section {
   position:relative;
   width:100%;
@@ -75,11 +98,50 @@ h1 {
 .show {
   opacity:1;
 }
-    @media (max-width: 767px) {
-  .background {
-    background-size: contain; /* Adjust the background-size property for mobile */
-  }
+section#s1 {
+  position: relative;
 }
+
+.button-container {
+  position: absolute;
+  top: 80%; /* Position the container 50% from the top of section 1 */
+  left: 50%; /* Position the container 50% from the left of section 1 */
+  transform: translate(-50%, -50%); /* Center the container horizontally and vertically */
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #660000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+/* Add the following CSS to center the title */
+.title-container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+.title-container h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.title-container p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* Existing styles */
+/* ... (existing styles) ... */
+
   </style>
 
 </head>
@@ -87,8 +149,18 @@ h1 {
 <!-- partial:index.partial.html -->
 
 <section id="s1" class="section">
-</section>
-
+    <div class="title-container">
+        <h1>Arkham Ashulm presents</h1>
+        <p>batmantle - $BATMAN</p>
+        <p>pepe fork, Verified, 0/0 tax, deflationary</p>
+      </div>
+    <!-- Add the buttons -->
+    <div class="button-container">
+      <button class="button">Buy</button>
+      <button class="button">Chart</button>
+      <button class="button">Mantle checkup</button>
+    </div>
+  </section>
 
 <section id="s2" class="section">
 <div class="main">
@@ -126,7 +198,21 @@ h1 {
     </div>
 </div>
 </section>
-<section id="s3" class="section"></section>
+<section id="s3" class="section">
+    <iframe width="600" height="200" src= "https://www.youtube.com/embed/tgbNymZ7vqY"frameborder="1" allowfullscreen></iframe>
+
+    <div class="footer">
+      <div class="social-icons">
+        <a href="https://telegram.example" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="https://twitter.example" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://dexscreener.example" target="_blank"><i class="fas fa-glasses"></i></a>
+        
+      </div>
+      <p class="copyright">
+        &copy; 2023 Batmantle. All rights reserved.
+      </p>
+    </div>
+  </section>
 <div class="background b1"></div>
 <div class="background b2"></div>
 <div class="background b3"></div>
