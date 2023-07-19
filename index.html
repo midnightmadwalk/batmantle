@@ -138,6 +138,35 @@ section#s1 {
   font-size: 1.5rem;
   font-weight: 500;
 }
+/* Add the following CSS for the slide-down arrow */
+.slide-down-arrow {
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  animation: slideDownAnimation 1.5s infinite;
+}
+
+/* Animation for the slide-down arrow */
+@keyframes slideDownAnimation {
+  0% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+}
+
+/* Existing styles */
+/* ... (existing styles) ... */
 
 /* Existing styles */
 /* ... (existing styles) ... */
@@ -155,7 +184,9 @@ section#s1 {
         <h1>MANTLE CHECKUP</h1>
     </div>
 
-
+    <div class="slide-down-arrow">
+        <i class="fas fa-chevron-down"></i>
+      </div>
   </section>
 
 <section id="s2" class="section">
