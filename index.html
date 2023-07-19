@@ -198,7 +198,23 @@ section#s1 {
     opacity: 0.8;
   }
 }
-
+/* Add this code to the existing styles */
+.top-left-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+.bottom-right-text {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
 /* Existing styles */
 /* ... (existing styles) ... */
 
@@ -212,12 +228,23 @@ section#s1 {
 <!-- partial:index.partial.html -->
 
 <section id="s1" class="section">
+    <div class="top-left-text">
+        <p>forked pepe contract</p>
+        <p>verified contract</p>
+        <p>0/0 tax</p>
+        <p>deflationary</p>
+      </div>
     <div class="button-container">
         <h1>BUY</h1>
         <h1>CHART</h1>
         <h1>MANTLE CHECKUP</h1>
     </div>
-
+    <div class="bottom-right-text">
+        <p>tokenomics</p>
+        <p>about</p>
+        <p>telegram</p>
+        <p>twitter</p>
+      </div>
     <div class="slide-down-arrow">
         <i class="fas fa-chevron-down"></i>
       </div>
