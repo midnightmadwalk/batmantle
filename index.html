@@ -6,7 +6,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BatMantle</title>
+  <title>A1A ECOSYSTEM</title>
   <style>
 
     @media (max-width: 768px) {
@@ -258,8 +258,12 @@ section#s1 {
         <h2>Welcome to Token A1A!</h2>
         <p>This is a forever token that lives on the Pulsechain network.</p>
         <p>There is a 1% tax on buys and sells, that goes 100% to reflections.</p>
-        <p>Token A1A was paired with 60 different liquidity pools on both V1 and V2 at launch. All of these liquid pools have been sent to the dead address. 56 of these pools were paired with 0.5% of the supply and 100k PLS worth of the token it is paired with. Both the V1 and V2 wpls pools were started with 1m PLS. 100% of the supply was added and burned in LP at launch.</p>
-        <p>Token A1A is designed to provide paths for arbitrage bots to constantly level out the price across all the LP pools, thus rewarding holders with 1% of the total volume. As the price of the tokens that A1A is paired with moves up and down, it will force buys and sells on the chart. While you can use this for a quick flip, it ultimately is a forever hold that has a true ability to be worth more as its liquidity-bonded pairs rise over time with Pulsechain's growth.</p>
+        <p>Token A1A was paired with 60 different liquidity pools on both V1 and V2 at launch. 
+        <p>All of these liquid pools have been sent to the dead address. 56 of these pools were paired with 0.5% of the supply and 100k PLS worth of the token it is paired with. </p>
+        <p>Both the V1 and V2 wpls pools were started with 1m PLS. 100% of the supply was added and burned in LP at launch.</p>
+        <p>Token A1A is designed to provide paths for arbitrage bots to constantly level out the price across all the LP pools, thus rewarding holders with 1% of the total volume. 
+        <p>As the price of the tokens that A1A is paired with moves up and down, it will force buys and sells on the chart. </p>
+        <p>While you can use this for a quick flip, it ultimately is a forever hold that has a true ability to be worth more as its liquidity-bonded pairs rise over time with Pulsechain's growth.</p>
         <p>Token B2B is heavily paired with Token A1A. B2B has a 2% reflection tax and is meant to be a form of long-term storage and liquidity building for Token A1A.</p>
         <p>With almost 1,000 LPs now, Token A1A is growing burned liquidity to hundreds of forked PRC copies as well as core RH and from ETH assets.</p>
     </form>
@@ -282,7 +286,7 @@ section#s1 {
         
       </div>
       <p class="copyright">
-        &copy; 2023 Batmantle. All rights reserved.
+        &copy; 2025 A1A ECO All rights reserved.
       </p>
     </div>
   </section>
@@ -332,51 +336,6 @@ if (sections && sections.length > 0) {
 // Add all scenes to controller
 controller.addScene(scenes);
   </script>
-    <script>
-        var mentalHealthPoints = 0;
-
-        function displayText(questionId) {
-            var questionText = "";
-            var answer = document.querySelector('input[name="' + questionId + '"]:checked').value;
-            var textContainer = document.getElementById(questionId + "-text");
-
-            if (answer === "yes") {
-                switch (questionId) {
-                    case "q1":
-                        questionText = "$BATMAN contract is verified and fork of the original pepe on ethereum.";
-                        break;
-                    case "q2":
-                        questionText = "you're a rug,too.";
-                        break;
-                    case "q3":
-                        questionText = "LOL";
-                        break;
-                    case "q4":
-                        questionText = "touch grass";
-                        break;
-                    case "q5":
-                        questionText = "frustration, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
-                        break;
-                }
-
-                mentalHealthPoints++;
-                textContainer.innerHTML = "<strong>Batmantle reply : </strong> " + questionText;
-            } else {
-                textContainer.innerHTML = "";
-            }
-        }
-
-        function calculateMentalHealthPoints() {
-            var resultContainer = document.getElementById("results");
-
-            if (mentalHealthPoints > 0) {
-                resultContainer.innerHTML = "<h2>Results:</h2>";
-                resultContainer.innerHTML += "<p>Mental Health Points: " + mentalHealthPoints + "</p>";
-                resultContainer.innerHTML += "<p>The higher the Mental Health Points, the worse your mental health may be.</p>";
-            } else {
-                resultContainer.innerHTML = "<p>Please answer all the questions to see the results.</p>";
-            }
-        }
-    </script>
+ 
 </body>
 </html>
